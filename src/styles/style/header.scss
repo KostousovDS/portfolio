@@ -1,0 +1,62 @@
+@import "../variables";
+@import "../../../node_modules/font-awesome/scss/font-awesome";
+
+
+.section-header {
+  background-color: $background-color;
+  height: 175px;
+}
+
+.menus {
+  display: inline-flex;
+
+  .menu {
+    display: flex;
+
+    .cart {
+      display: block;
+      width: 133px;
+      height: auto;
+      background-color: $dark-gray;
+      text-align: center;
+      color: $white;
+
+      &:active, &:hover {
+        a {
+          color: $gold;
+        }
+      }
+
+      .fa {
+        width: 100%;
+        font-size: 22px;
+      }
+
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+
+      span {
+        display: block;
+        text-transform: uppercase;
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
+.image-wrap {
+  height: 58px;
+  text-align: center;
+
+  .logo {
+    max-width: 280px;
+  }
+}
+
+
+
+
+
+

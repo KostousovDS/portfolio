@@ -1,0 +1,20 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "./helper/padding";
+@import "./helper/font-size";
+@import "./helper/margin";
+
+@import "./variables";
+
+@font-face {
+  font-family: "Tahoma";
+  src: local("Tahoma"), url(../fonts/Tahoma) format('eot woff ttf');
+}
+
+@import "./style/header";
+@import "./style/section";
+
+
+
+@import "./media";
+@import "./helper/helper";

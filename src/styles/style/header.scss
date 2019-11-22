@@ -4,12 +4,13 @@
 
 .section-header {
   background-color: $background-color;
-  height: 175px;
+  height: auto;
 }
 
+.button-menu {
+  height: auto;
+}
 .menus {
-  display: inline-flex;
-
   .menu {
     display: flex;
 
@@ -45,15 +46,13 @@
     }
   }
 }
-
 .image-wrap {
-  height: 58px;
-  text-align: center;
+   .logo {
+     max-width: 280px;
+   }
+ }
 
-  .logo {
-    max-width: 280px;
-  }
-}
+
 
 
 

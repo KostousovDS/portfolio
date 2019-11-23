@@ -10,6 +10,11 @@
 
 .hex {
   display: flex;
+  transition: 0.5s all ease;
+  &:hover {
+    transform: rotateY(30deg);
+
+  }
 }
 
 .hexagon2 {

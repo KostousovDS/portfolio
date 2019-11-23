@@ -1,0 +1,41 @@
+@import "../variables";
+@import "../../../node_modules/font-awesome/scss/font-awesome";
+
+footer {
+  background-color: $dark-gray;
+
+}
+
+.footers {
+  height: auto;
+  span {
+    font-size: 12px;
+    color: $white;
+  }
+}
+
+.hex_footers {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  .hex_footer {
+    display: block;
+    width: 46px;
+    height: 40px;
+    background-image: url("../../images/footer.png");
+    margin-right: 5px;
+
+    .fa {
+      font-size: 16px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      top: 40%;
+      transform: translateY(-50%);
+      &:hover {
+        color: $gold;
+      }
+    }
+  }
+}

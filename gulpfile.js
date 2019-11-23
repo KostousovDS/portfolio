@@ -18,12 +18,12 @@ gulp.task('sass', function () {
 
 gulp.task('watch', function () {
     watch(['./src/styles/**/*.scss', './src/styles/*.scss'], gulp.series('sass'));
-    watch(['./src/template/**/*.html', './src/index.html'], gulp.series('rigger'));
+    watch('./src/**/**/**/*.html', gulp.series('rigger'));
     watch('./src/js/**/*.js', gulp.series('js'));
 });
 
 gulp.task('rigger', function () {
-    return gulp.src('./src/index.html')
+    return gulp.src('./src/**/**/**/*.html')
         .pipe(rigger())
         .pipe(gulp.dest('./build/'))
         .pipe(connect.reload());

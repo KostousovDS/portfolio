@@ -1,0 +1,73 @@
+@import "../variables";
+@import "../../../node_modules/font-awesome/scss/font-awesome";
+
+.section-content {
+  background-color: $background-color;
+  height: auto;
+}
+
+.hex-skills {
+  display: flex;
+  &:hover {
+    transform: rotateY(0);
+  }
+  .hexagon2 {
+     width: 200px;
+     height: 250px;
+     margin: 0 15px;
+     top: -85px;
+   }
+
+  .gallery-item {
+    background-color: $white;
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+
+  .hexagon {
+    visibility: hidden;
+    transform: rotate(120deg);
+    cursor: pointer;
+  }
+
+  .hexagon-in1 {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+  }
+
+  .hexagon-in2 {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 125%;
+    visibility: visible;
+    transform: rotate(-60deg);
+    transition: all 0.5s ease;
+
+    &:hover, &:focus {
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    }
+  }
+}
+
+
+
+.text {
+  margin-top: 32px;
+
+  h2 {
+    color: $white;
+    font-size: 20px;
+  }
+
+  p {
+    color: $gray;
+    font-size: 12px;
+  }
+}

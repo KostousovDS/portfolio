@@ -127,6 +127,9 @@
   .map3 {
     display: none;
   }
+  .text {
+    margin-top: 52px;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -163,8 +166,13 @@
   .map3 {
     display: block;
   }
+  .text {
+    margin-top: 32px;
+  }
+  .hex-skills {
+    margin-bottom: 0px;
+  }
 }
-
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 575px) {
@@ -218,9 +226,25 @@
   .line1 {
     margin-top: -80px;
   }
+  .text {
+    margin-top: 52px;
+
+    h2 {
+      font-size: 15px;
+    }
+
+    p {
+      font-size: 9px;
+    }
+  }
+
 }
 
 @media only screen and (max-width: 390px) {
+  .text {
+    margin-top: 72px;
+  }
+
 
 }
 
